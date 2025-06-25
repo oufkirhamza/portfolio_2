@@ -6,17 +6,18 @@ import gsap from "gsap";
 
 const Skills = () => {
   useGSAP(() => {
-    let ctx = gsap.from(".frontend", {
+    gsap.from(".frontend", {
       y: "100%",
       duration: 1,
       opacity:0,
       scrollTrigger: {
         trigger: ".frontend",
         start: "bottom bottom+=0%",
+        end: "top top+=40%",
         scrub:true,
       },
     });
-    let ctx1 = gsap.from(".backend", {
+    gsap.from(".backend", {
       x: "-100%",
       duration: 1,
       opacity:0,
@@ -24,9 +25,10 @@ const Skills = () => {
         trigger: ".backend",
         scrub:true,
         start: "bottom bottom+=0%",
+        end: "top top+=40%",
       },
     });
-    let ctx2 = gsap.from(".outils", {
+    gsap.from(".outils", {
       x: "100%",
       duration: 1,
       opacity:0,
@@ -34,6 +36,7 @@ const Skills = () => {
         scrub:true,
         trigger: ".outils",
         start: "bottom bottom+=0%",
+        end: "top top+=40%",
       },
     });
   });

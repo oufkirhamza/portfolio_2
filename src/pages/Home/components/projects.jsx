@@ -6,16 +6,18 @@ import { useGSAP } from "@gsap/react";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Star from "../../../components/Star";
+import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Projects = () => {
   const { projects } = useContext(MyContext);
+  const navigate = useNavigate();
   useGSAP(() => {
     gsap.utils.toArray(".prjcts").forEach((prjct, i) => {
       ScrollTrigger.create({
         trigger: prjct,
         onEnter: () => console.log("enter"),
-        start: "top 5%",
+        start: "top 10%",
         endTrigger: ".cont",
         end: "bottom bottom",
         scrub: 1,
@@ -26,7 +28,7 @@ const Projects = () => {
     });
   });
   return (
-    <div className="cont text-white py-9 bg-[#060a21] min-h-[100vh] flex flex-col gap-3 items-center">
+    <div id="projects" className="cont text-white py-9 bg-[#060a21] min-h-[100vh] flex flex-col gap-3 items-center">
       <div className="flex items-center gap-3">
         <Star width={50} />
         <h1 className="text-3xl font-medium">Projects</h1>

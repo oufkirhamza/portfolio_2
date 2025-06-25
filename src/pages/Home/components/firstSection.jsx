@@ -26,7 +26,7 @@ export const FirstSection = () => {
         // pinSpacing: false,
         // toggleClass:'w-[10vw]'
       },
-      // width:"100%",
+      // width:"100%",npm
     });
   },[]);
   return (
@@ -55,12 +55,12 @@ export const FirstSection = () => {
               digital solutions.
             </p>
             <div className="flex gap-5">
-              <button className="px-5 py-2 bg-white border-2 border-white rounded-lg text-black font-medium">
+              <a href="#contact" className="px-5 py-2 bg-white border-2 border-white rounded-lg text-black font-medium">
                 👋 Get in touch
-              </button>
-              <button className="px-5 py-2 border-2 border-white text-white flex items-center rounded-lg font-medium gap-2">
+              </a>
+              <a href="#projects" className="px-5 py-2 border-2 border-white text-white flex items-center rounded-lg font-medium gap-2">
                 View projects <MdOutlineArrowOutward />
-              </button>
+              </a>
             </div>
           </div>
           {/* !!!!!!!!!!!!!!! circles !!!!!!!!!!!!!!!!!!! */}

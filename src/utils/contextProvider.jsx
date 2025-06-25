@@ -10,9 +10,9 @@ import casatourat5 from "../assets/img/casatourat5.jpg";
 import casatourat6 from "../assets/img/casatourat6.jpg";
 import casatourat7 from "../assets/img/casatourat7.jpg";
 import lionsgeek_backoffice from "../assets/img/lionsgeek_backoffice.png";
-import casatourat_back1 from "../assets/img/casatourat_back1.png"
-import casatourat_back2 from "../assets/img/casatourat_back2.png"
-import casatourat_back3 from "../assets/img/casatourat_back3.png"
+import casatourat_back1 from "../assets/img/casatourat_back1.png";
+import casatourat_back2 from "../assets/img/casatourat_back2.png";
+import casatourat_back3 from "../assets/img/casatourat_back3.png";
 import yes_africa1 from "../assets/img/yes_africa1.png";
 import yes_africa2 from "../assets/img/yes_africa2.png";
 export const MyContext = createContext();
@@ -20,6 +20,7 @@ export const MyProvider = ({ children }) => {
   const [test, setTest] = useState("Hello Test");
   const projects = [
     {
+      id: 1,
       title: "Casatourat Mobile App",
       technologies: ["Expo React Native"],
       images: [
@@ -36,6 +37,7 @@ export const MyProvider = ({ children }) => {
         "A mobile application designed for exploring circuits and locations with enhanced user experiences. Delivered a beta version, resolved client feedback issues, and refined the app's functionality.",
     },
     {
+      id: 2,
       title: "Casatourat Backend",
       technologies: ["Laravel"],
       images: [casatourat_back1, casatourat_back2, casatourat_back3],
@@ -43,6 +45,7 @@ export const MyProvider = ({ children }) => {
         "Developed a robust backend for the Casatourat mobile app, focusing on API integration, database management, and performance optimization.",
     },
     {
+      id: 3,
       title: "LionsGeek Backend",
       technologies: ["Laravel", "PHP"],
       images: [lionsgeek_backoffice],
@@ -50,6 +53,7 @@ export const MyProvider = ({ children }) => {
         "Built the backend for LionsGeek's main website, ensuring seamless functionality and integration with various features to support the organization's goals.",
     },
     {
+      id: 4,
       title: "Yes Africa Website",
       technologies: ["React.js", "Laravel"],
       images: [yes_africa1, yes_africa2],
@@ -57,6 +61,7 @@ export const MyProvider = ({ children }) => {
         "Developed and delivered a dynamic website for Yes Africa, focusing on user-friendly interfaces and efficient backend integration. Updated the UI to enhance the user experience.",
     },
     {
+      id: 5,
       title: "GitHub Profile Insights",
       technologies: ["React.js", "GitHub API"],
       images: [socialOcto1, socialOcto2, socialOcto3],

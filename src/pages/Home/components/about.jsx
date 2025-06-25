@@ -5,7 +5,7 @@ import Star from "../../../components/Star";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-3 items-center bg-[#060a21] text-white pb-4">
+    <div id="about" className="flex flex-col gap-3 items-center bg-[#060a21] text-white pb-4">
       <div className="flex items-center gap-3 w-70%">
         <Star width={50} />
         <h1 className="text-3xl font-medium">About</h1>
