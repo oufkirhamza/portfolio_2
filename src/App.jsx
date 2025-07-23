@@ -9,7 +9,7 @@ function App() {
   // animate the lights on the portfolion by opacity
   return (
     <MyProvider>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/project/:id" element={<ProjectDetails />} />

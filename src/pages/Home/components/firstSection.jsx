@@ -40,38 +40,43 @@ export const FirstSection = () => {
             <div className="motion-preset-blink motion-duration-2000 w-5 opacity-30 blur-md right-[70%] h-[50vh] -rotate-3 bg-gradient-to-b from-white/40 rounded-full backdrop-blur-sm"></div>
             <div className="motion-preset-blink motion-duration-2000 w-5 opacity-30 blur-md right-[50%] h-[50vh] -rotate-12 bg-gradient-to-b from-white/40 rounded-full backdrop-blur-sm"></div>
           </div>
-          <div className="flex flex-col gap-3 items-center text-center w-[40%] z-30">
-            <div className="flex flex-col items-center">
-              <img src={memoji} alt="" />
-              <div className="flex items-center gap-2  bg-[#060a21] px-3 py-2 rounded-full">
-                <div className="bg-green-500 w-4 h-4 rounded-full"></div>
-                <h1>Looking for new projects</h1>
+          <div className="flex flex-col gap-4 sm:gap-6 items-center text-center w-full max-w-4xl px-4 sm:px-6 lg:px-8 z-30">
+            <div className="flex flex-col items-center gap-3 sm:gap-4">
+              <img src={memoji} alt="Hamza Oufkir" className=" lg:w-auto lg:h-auto" />
+              <div className="flex items-center gap-2 bg-[#060a21] px-3 py-2 rounded-full text-sm sm:text-base">
+                <div className="bg-green-500 w-3 h-3 sm:w-4 sm:h-4 rounded-full"></div>
+                <span>Looking for new projects</span>
               </div>
             </div>
-            <h1 className="text-lg text-white/80">Hi, my name is </h1>
-            <h1 className="text-4xl font-bold">OUFKIR Hamza</h1>
-            <p className="text-2xl ">
+            <h1 className="text-base sm:text-lg lg:text-xl text-white/80">Hi, my name is</h1>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">OUFKIR Hamza</h1>
+            <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl leading-relaxed max-w-3xl">
               Full-stack developer focused on delivering powerful and intuitive
               digital solutions.
             </p>
-            <div className="flex gap-5">
-              <a href="#contact" className="px-5 py-2 bg-white border-2 border-white rounded-lg text-black font-medium">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 w-full sm:w-auto">
+              <a
+                href="#contact"
+                className="px-5 py-3 bg-white border-2 border-white rounded-lg text-black font-medium hover:bg-gray-100 transition-colors text-center"
+              >
                 👋 Get in touch
               </a>
-              <a href="#projects" className="px-5 py-2 border-2 border-white text-white flex items-center rounded-lg font-medium gap-2">
+              <a
+                href="#projects"
+                className="px-5 py-3 border-2 border-white text-white flex items-center justify-center rounded-lg font-medium gap-2 hover:bg-white/10 transition-colors"
+              >
                 View projects <MdOutlineArrowOutward />
               </a>
             </div>
           </div>
           {/* !!!!!!!!!!!!!!! circles !!!!!!!!!!!!!!!!!!! */}
-          <div className="overflow-hidden absolute w-[42rem] h-[42rem] border-2 border-[#2b5ab181] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-50% to-[#1930a24b]">
-            {" "}
+          <div className="overflow-hidden absolute w-80 h-80 lg:w-[42rem] lg:h-[42rem] border-2 border-[#2b5ab181] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-50% to-[#1930a24b]">
             <svg
               className="opacity-0"
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <filter id="noiseFilter">
+              <filter id="noiseFilter1">
                 <feTurbulence
                   type="fractalNoise"
                   baseFrequency="10"
@@ -79,16 +84,16 @@ export const FirstSection = () => {
                   stitchTiles="stitch"
                 />
               </filter>
-              <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+              <rect width="100%" height="100%" filter="url(#noiseFilter1)" />
             </svg>
           </div>
-          <div className="overflow-hidden absolute w-[52rem] h-[52rem] border-2 border-[#2b5ab19f] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-60% to-[#1930a24b]">
+          <div className="overflow-hidden absolute w-96 h-96 lg:w-[52rem] lg:h-[52rem] border-2 border-[#2b5ab19f] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-60% to-[#1930a24b]">
             <svg
               className="opacity-0"
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <filter id="noiseFilter">
+              <filter id="noiseFilter2">
                 <feTurbulence
                   type="fractalNoise"
                   baseFrequency="10"
@@ -96,16 +101,16 @@ export const FirstSection = () => {
                   stitchTiles="stitch"
                 />
               </filter>
-              <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+              <rect width="100%" height="100%" filter="url(#noiseFilter2)" />
             </svg>
           </div>
-          <div className="overflow-hidden absolute w-[62rem] h-[62rem] border-2 border-[#2b5ab19f] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-60% to-[#1930a24b]">
+          <div className="overflow-hidden absolute w-[28rem]  sm:w-[ sm:h-[36rem] lg:w-[62rem] lg:h-[62rem] border-2 border-[#2b5ab19f] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-60% to-[#1930a24b]">
             <svg
               className="opacity-0"
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <filter id="noiseFilter">
+              <filter id="noiseFilter3">
                 <feTurbulence
                   type="fractalNoise"
                   baseFrequency="10"
@@ -113,16 +118,16 @@ export const FirstSection = () => {
                   stitchTiles="stitch"
                 />
               </filter>
-              <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+              <rect width="100%" height="100%" filter="url(#noiseFilter3)" />
             </svg>
           </div>
-          <div className="overflow-hidden absolute w-[72rem] h-[72rem] border-2 border-[#2b5ab19f] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-60% to-[#1930a24b]">
+          <div className="overflow-hidden absolute w-[42rem]  sm:w-[ sm:h-[44rem] lg:w-[72rem] lg:h-[72rem] border-2 border-[#2b5ab19f] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent from-60% to-[#1930a24b]">
             <svg
               className="opacity-15"
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <filter id="noiseFilter">
+              <filter id="noiseFilter4">
                 <feTurbulence
                   type="fractalNoise"
                   baseFrequency="10"
@@ -130,7 +135,7 @@ export const FirstSection = () => {
                   stitchTiles="stitch"
                 />
               </filter>
-              <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+              <rect width="100%" height="100%" filter="url(#noiseFilter4)" />
             </svg>
           </div>
           <div className="w-full h-[50vh] absolute bottom-0 bg-gradient-to-t from-[#060a21] "></div>

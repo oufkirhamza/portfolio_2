@@ -1,4 +1,5 @@
 
+import Header from '../../layouts/header';
 import About from './components/about';
 import Contact from './components/contact';
 import { FirstSection } from './components/firstSection';
@@ -7,6 +8,7 @@ import Skills from './components/skills';
 export const HomePage = () => {
     return (
         <>
+        <Header/>
             <FirstSection/>
             <Projects/>
             <Skills/>

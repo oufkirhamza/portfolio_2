@@ -5,13 +5,13 @@ import Star from "../../../components/Star";
 
 const About = () => {
   return (
-    <div id="about" className="flex flex-col gap-3 items-center bg-[#060a21] text-white pb-4">
-      <div className="flex items-center gap-3 w-70%">
-        <Star width={50} />
-        <h1 className="text-3xl font-medium">About</h1>
+    <div id="about" className="flex flex-col gap-6 sm:gap-8 items-center bg-[#060a21] text-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+      <div className="flex items-center gap-3 mb-4 sm:mb-6">
+        <Star width={40} className="sm:w-[50px]" />
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium">About</h1>
       </div>
-      <div className="flex justify-between relative rounded-3xl gap-5 bg-gradient-to-tr from-[#060a21] to-[#121a44] overflow-hidden w-[70%] p-7">
-        <svg
+      <div className="flex flex-col lg:flex-row justify-between relative rounded-2xl sm:rounded-3xl gap-6 lg:gap-8 bg-gradient-to-tr from-[#060a21] to-[#121a44] overflow-hidden w-full max-w-6xl p-6 sm:p-8 lg:p-10">
+        {/* <svg
           className="opacity-25 absolute inset-0"
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ const About = () => {
             />
           </filter>
           <rect width="100%" height="70%" filter="url(#noiseFilter)" />
-        </svg>
+        </svg> */}
         <div className="flex flex-col gap-4 w-[50%] ">
           <h1 className="text-3xl">Know who am I</h1>
           <p className="leading-8">
