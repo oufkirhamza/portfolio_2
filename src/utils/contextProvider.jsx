@@ -197,8 +197,8 @@ export const MyProvider = ({ children }) => {
       year: "2024",
       status: "Completed",
       category: "Frontend Development",
-      liveUrl: "https://github-insights-demo.com",
-      githubUrl: "https://github.com/username/github-insights",
+      liveUrl: "https://social-octo.vercel.app/",
+      githubUrl: "https://github.com/oufkirhamza/SocialOcto",
       role: "Frontend Developer",
     },
   ];
