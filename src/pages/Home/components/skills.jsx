@@ -60,7 +60,7 @@ const Skills = () => {
     );
   };
   return (
-    <div className="overflow-x-hidden text-white py-12 sm:py-16 lg:py-20 bg-[#060a21] min-h-[80vh] flex flex-col gap-6 sm:gap-8 items-center px-4 sm:px-6 lg:px-8">
+    <div className="overflow-x-hidden text-white pt-36 lg:py-20 bg-[#060a21] min-h-[80vh] flex flex-col gap-6 sm:gap-8 items-center px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col items-center relative justify-between gap-6 sm:gap-8 w-full max-w-6xl">
         <div className="flex text-center items-center gap-3 mb-4 sm:mb-6">
           <Star width={40} className="sm:w-[50px]" />
@@ -72,21 +72,6 @@ const Skills = () => {
         <div className="flex flex-col gap-6 sm:gap-8 w-full">
           {/* Frontend Technologies */}
           <div className="frontend flex relative flex-wrap justify-center gap-6 sm:gap-8 lg:gap-12 rounded-2xl sm:rounded-3xl bg-gradient-to-bl from-[#060a21] to-[#121a44] overflow-hidden py-8 sm:py-10 px-6 sm:px-8">
-            {/* <svg
-              className="opacity-25 absolute inset-0"
-              viewBox="0 0 200 200"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <filter id="noiseFilterFrontend">
-                <feTurbulence
-                  type="fractalNoise"
-                  baseFrequency="0.5"
-                  numOctaves="20"
-                  stitchTiles="stitch"
-                />
-              </filter>
-              <rect width="100%" height="70%" filter="url(#noiseFilterFrontend)" />
-            </svg> */}
             <div className="relative z-10">
               <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center text-blue-400">
                 Frontend
@@ -116,21 +101,6 @@ const Skills = () => {
           <div className="flex flex-col lg:flex-row gap-6 sm:gap-8">
             {/* Backend */}
             <div className="backend flex-1 flex relative flex-col items-center gap-6 sm:gap-8 rounded-2xl sm:rounded-3xl bg-gradient-to-tr from-[#060a21] to-[#121a44] overflow-hidden py-8 sm:py-10 px-6 sm:px-8">
-              {/* <svg
-                className="opacity-25 absolute inset-0"
-                viewBox="0 0 200 200"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <filter id="noiseFilterBackend">
-                  <feTurbulence
-                    type="fractalNoise"
-                    baseFrequency="0.5"
-                    numOctaves="20"
-                    stitchTiles="stitch"
-                  />
-                </filter>
-                <rect width="100%" height="70%" filter="url(#noiseFilterBackend)" />
-              </svg> */}
               <div className="relative z-10">
                 <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center text-green-400">
                   Backend
@@ -151,22 +121,6 @@ const Skills = () => {
 
             {/* Tools */}
             <div className="outils flex-1 flex relative flex-col items-center gap-6 sm:gap-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-[#121a44] to-[#060a21] overflow-hidden py-8 sm:py-10 px-6 sm:px-8">
-              {/* <svg
-                className="opacity-25 absolute inset-0"
-                viewBox="0 0 200 200"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <filter id="noiseFilterTools">
-                  <feTurbulence
-                    type="fractalNoise"
-                    baseFrequency="0.5"
-                    numOctaves="2"
-                    stitchTiles="stitch"
-                  />
-                </filter>
-                <rect width="100%" height="70%" filter="url(#noiseFilterTools)" />
-              </svg> */}
-
               <div className="relative z-10">
                 <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center text-purple-400">
                   Tools

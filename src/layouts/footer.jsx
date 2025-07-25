@@ -15,14 +15,14 @@ const Footer = () => {
               "_blank"
             );
           }}
-          className="lg:w-7 lg:h-7 cursor-pointer"
+          className="w-7 h-7 cursor-pointer"
         />
         <svg
           onClick={() => {
             window.open("https://github.com/oufkirhamza", "_blank");
           }}
           xmlns="http://www.w3.org/2000/svg"
-          className="lg:w-6 lg:h-6  w-16 h-16 cursor-pointer"
+          className="w-6 h-6   cursor-pointer"
           fill="none"
           viewBox="0 0 100 100"
         >

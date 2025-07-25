@@ -26,7 +26,7 @@ const About = () => {
           </filter>
           <rect width="100%" height="70%" filter="url(#noiseFilter)" />
         </svg> */}
-        <div className="flex flex-col gap-4 w-[50%] ">
+        <div className="flex flex-col gap-4 lg:w-[50%] ">
           <h1 className="text-3xl">Know who am I</h1>
           <p className="leading-8">
             I’m a full-stack developer with a passion for building web and
@@ -43,7 +43,7 @@ const About = () => {
         <img
           loading="lazy"
           src={me}
-          className="w-[40%] rounded-xl h-[50vh] object-cover object-top "
+          className="lg:w-[40%] rounded-xl h-[50vh] object-cover object-top "
           alt=""
         />
       </div>
