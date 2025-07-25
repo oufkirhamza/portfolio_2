@@ -15,6 +15,12 @@ import yes_africa2 from "../assets/img/yes_africa2.png";
 import yes1 from "../assets/img/yes1.png";
 import yes2 from "../assets/img/yes2.png";
 import yes3 from "../assets/img/yes3.png";
+import yesmobile1 from "../assets/img/yesmobile1.png";
+import yesmobile2 from "../assets/img/yesmobile2.png";
+import yesmobile3 from "../assets/img/yesmobile3.png";
+import herday1 from "../assets/img/herday1.png";
+import herday2 from "../assets/img/herday2.png";
+import herday3 from "../assets/img/herday3.png";
 export const MyContext = createContext();
 export const MyProvider = ({ children }) => {
   const projects = [
@@ -155,7 +161,7 @@ export const MyProvider = ({ children }) => {
         "Implementing SEO best practices",
       ],
       timeline: "2 months",
-      year: "2023",
+      year: "2025",
       status: "Completed",
       category: "Full Stack Development",
       liveUrl: "https://youthempowermentsummit.africa/",
@@ -164,6 +170,44 @@ export const MyProvider = ({ children }) => {
     },
     {
       id: "5",
+      title: "YES Africa Mobile App",
+      subtitle: "Youth Empowerment Summit 2025",
+      technologies: [
+        "Expo React Native",
+        "Laravel",
+        "REST API",
+        "JavaScript",
+      ],
+      images: [yesmobile1, yesmobile2, yesmobile3],
+      description:
+        "Developed a cross-platform mobile application for the Youth Empowerment Summit 2025 to manage attendees, speakers, event programs, and partners.",
+      detailedDescription:
+        "The YES Africa mobile app was built to support and streamline the Youth Empowerment Summit 2025 experience. Users can register, view the event schedule, scan QR badges for identification, discover speakers and NGOs, and explore UN agencies and partners involved. The app is multilingual and offers real-time updates, interactive features, and a clean UI optimized for performance.",
+      features: [
+        "User account management and QR badge generation",
+        "Event program viewer with time slots and location info",
+        "List of speakers, NGOs, sponsors, and UN agencies",
+        "QR scanning for attendee verification",
+        "Profile editing and gender selection",
+        "Networking and discovery sections",
+      ],
+      challenges: [
+        "Ensuring smooth performance with dynamic data",
+        "Integrating offline data with local database (SQLite)",
+        "Multilingual UI/UX consistency",
+        "Synchronizing with Laravel API in real-time",
+        "Managing QR generation and badge verification",
+      ],
+      timeline: "1.5 months",
+      year: "2025",
+      status: "Completed",
+      category: "Mobile Development",
+      liveUrl: "https://youthempowermentsummit.africa/",
+      githubUrl: null,
+      role: "Mobile Developer",
+    },
+    {
+      id: "6",
       title: "GitHub Profile Insights",
       subtitle: "Developer Analytics Dashboard",
       technologies: [
@@ -201,6 +245,43 @@ export const MyProvider = ({ children }) => {
       githubUrl: "https://github.com/oufkirhamza/SocialOcto",
       role: "Frontend Developer",
     },
+    {
+  id: "7",
+  title: "Her Day For Her",
+  subtitle: "Women Empowerment Platform",
+  technologies: [
+    "React.js",
+    "Laravel",
+    "Tailwind CSS",
+    "MySQL",
+    "JavaScript"
+  ],
+  images: [herday1, herday2, herday3], 
+  description:
+    "Developed platform to support women empowerment initiatives in Morocco through storytelling, events, and impactful partnerships.",
+  detailedDescription:
+    "Her Day For Her is a digital platform dedicated to highlighting the stories of Moroccan women and promoting empowerment through events, media, and education. The platform features event promotion, partner showcases, dynamic content management, and a fully responsive design. The frontend was built in React.js, with a Laravel backend to handle content, users, and dynamic pages.",
+  features: [
+    "Responsive and modern UI",
+    "Event highlights and details page",
+    "Partner and sponsor showcase",
+    "Dynamic homepage with hero section and scrolling effects",
+    "Optimized SEO and accessibility",
+    "CMS-powered backend for managing content"
+  ],
+  challenges: [
+    "Building a visually impactful layout while maintaining performance",
+    "Ensuring consistent design responsiveness across devices"
+  ],
+  timeline: "1.5 months",
+  year: "2025",
+  status: "Completed",
+  category: "Full Stack Development",
+  liveUrl: "https://herdayforher.ma/",
+  githubUrl: null,
+  role: "Full Stack Developer"
+}
+
   ];
 
   return (

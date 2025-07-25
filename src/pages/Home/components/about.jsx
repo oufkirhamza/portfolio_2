@@ -36,9 +36,9 @@ const About = () => {
             to developing efficient backends, I enjoy turning ideas into
             impactful solutions. Let’s create something amazing together!
           </p>
-          <button className="border-2 bg-transparent px-4 py-2 self-start rounded-lg flex items-center gap-2">
+          {/* <button className="border-2 bg-transparent px-4 py-2 self-start rounded-lg flex items-center gap-2">
             <span>Let's work </span> <FaArrowRight />
-          </button>
+          </button> */}
         </div>
         <img
           loading="lazy"

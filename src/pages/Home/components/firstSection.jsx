@@ -6,7 +6,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import Star from "../../../components/Star";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export const FirstSection = () => {
   const { test } = useContext(MyContext);
   // gsap.registerPlugin(ScrollTrigger);
@@ -28,7 +28,7 @@ export const FirstSection = () => {
       },
       // width:"100%",npm
     });
-  },[]);
+  }, []);
   return (
     <>
       <div className="min-h-[100vh] w-full overflow-hidden">
@@ -42,14 +42,17 @@ export const FirstSection = () => {
           </div>
           <div className="flex flex-col gap-4 sm:gap-6 items-center text-center w-full max-w-4xl px-4 sm:px-6 lg:px-8 z-30">
             <div className="flex flex-col items-center gap-3 sm:gap-4">
-              <img src={memoji} alt="Hamza Oufkir" className=" lg:w-auto lg:h-auto" />
               <div className="flex items-center gap-2 bg-[#060a21] px-3 py-2 rounded-full text-sm sm:text-base">
                 <div className="bg-green-500 w-3 h-3 sm:w-4 sm:h-4 rounded-full"></div>
                 <span>Looking for new projects</span>
               </div>
             </div>
-            <h1 className="text-base sm:text-lg lg:text-xl text-white/80">Hi, my name is</h1>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">OUFKIR Hamza</h1>
+            <h1 className="text-base sm:text-lg lg:text-xl text-white/80">
+              Hi, my name is
+            </h1>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">
+              OUFKIR Hamza
+            </h1>
             <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl leading-relaxed max-w-3xl">
               Full-stack developer focused on delivering powerful and intuitive
               digital solutions.
