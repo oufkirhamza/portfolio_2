@@ -45,6 +45,11 @@ const ProjectDetails = () => {
                 { opacity: 0, scale: 0.8 },
                 { opacity: 1, scale: 1, duration: 0.6, delay: 0.4, stagger: 0.1, ease: "back.out(1.7)" }
             );
+
+            gsap.fromTo(".thumbnail-item",
+                { opacity: 0, y: 20, scale: 0.9 },
+                { opacity: 1, y: 0, scale: 1, duration: 0.5, delay: 0.6, stagger: 0.05, ease: "power2.out" }
+            );
         }
     }, [project]);
 
@@ -192,24 +197,44 @@ const ProjectDetails = () => {
 
                             {/* Image Thumbnails */}
                             {project.images.length > 1 && (
-                                <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
-                                    {project.images.map((image, index) => (
-                                        <button
-                                            key={index}
-                                            onClick={() => setSelectedImage(index)}
-                                            className={`flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all ${
-                                                selectedImage === index
-                                                    ? 'border-blue-400 scale-105'
-                                                    : 'border-gray-600 hover:border-gray-400'
-                                            }`}
-                                        >
-                                            <img
-                                                src={image}
-                                                alt={`${project.title} ${index + 1}`}
-                                                className="w-full h-full object-cover"
-                                            />
-                                        </button>
-                                    ))}
+                                <div className="mt-6 p-4 bg-gradient-to-r from-gray-800/20 to-gray-900/20 rounded-xl border border-gray-700/30">
+                                    <div className="flex gap-3 overflow-x-auto pb-3 scrollbar-thin scrollbar-track-gray-800 scrollbar-thumb-gray-600">
+                                        {project.images.map((image, index) => (
+                                            <button
+                                                key={index}
+                                                onClick={() => setSelectedImage(index)}
+                                                className={`thumbnail-item group relative flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden transition-all duration-300 ${
+                                                    selectedImage === index
+                                                        ? 'ring-2 ring-blue-400 ring-offset-2 ring-offset-[#060a21] scale-105 shadow-lg shadow-blue-400/25'
+                                                        : 'ring-1 ring-gray-700/50 hover:ring-gray-600 hover:scale-[1.02] hover:shadow-md'
+                                                }`}
+                                            >
+                                                <img
+                                                    src={image}
+                                                    alt={`${project.title} ${index + 1}`}
+                                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                                                />
+                                                {/* Overlay for active state */}
+                                                {selectedImage === index && (
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent pointer-events-none" />
+                                                )}
+                                                {/* Hover overlay */}
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                                                {/* Image number indicator */}
+                                                <div className={`absolute bottom-1 right-1 w-5 h-5 rounded-full flex items-center justify-center text-xs font-medium transition-all duration-300 ${
+                                                    selectedImage === index
+                                                        ? 'bg-blue-400 text-white scale-110'
+                                                        : 'bg-black/60 text-gray-300 group-hover:bg-black/80'
+                                                }`}>
+                                                    {index + 1}
+                                                </div>
+                                            </button>
+                                        ))}
+                                    </div>
+                                    {/* Thumbnail navigation hint */}
+                                    <div className="flex items-center justify-center mt-2 text-xs text-gray-500">
+                                        <span>Click thumbnails to preview • {project.images.length} images</span>
+                                    </div>
                                 </div>
                             )}
                         </div>

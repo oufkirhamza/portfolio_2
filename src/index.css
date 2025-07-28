@@ -15,3 +15,23 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid #060a21; /* creates padding around scroll thumb */
 }
+
+/* Custom scrollbar for thumbnail container */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollbar-track-gray-800::-webkit-scrollbar-track {
+  background: rgba(31, 41, 55, 0.3);
+  border-radius: 3px;
+}
+
+.scrollbar-thumb-gray-600::-webkit-scrollbar-thumb {
+  background: rgba(75, 85, 99, 0.6);
+  border-radius: 3px;
+  border: none;
+}
+
+.scrollbar-thumb-gray-600::-webkit-scrollbar-thumb:hover {
+  background: rgba(75, 85, 99, 0.8);
+}
