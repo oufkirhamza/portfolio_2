@@ -43,7 +43,7 @@ const Header = () => {
             timeVariance={300}
             colors={[1, 2, 3, 1, 2, 3, 1, 4]}
           />
-          <div className="absolute inset-0 -z-10 rounded-full backdrop-blur-sm bg-white/10"></div>
+          <div className="absolute inset-0 -z-10 rounded-full backdrop-blur-sm bg-black/50"></div>
         </div>
       </div>
 
