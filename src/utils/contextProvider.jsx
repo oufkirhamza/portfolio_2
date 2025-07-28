@@ -21,6 +21,16 @@ import yesmobile3 from "../assets/img/yesmobile3.png";
 import herday1 from "../assets/img/herday1.png";
 import herday2 from "../assets/img/herday2.png";
 import herday3 from "../assets/img/herday3.png";
+import mooc1 from "../assets/img/mooc1-min.png";
+import mooc2 from "../assets/img/mooc2-min.png";
+import mooc3 from "../assets/img/mooc3-min.png";
+import mooc4 from "../assets/img/mooc4-min.png";
+import mooc5 from "../assets/img/mooc5-min.png";
+import mooc6 from "../assets/img/mooc6-min.png";
+import mooc7 from "../assets/img/mooc7-min.png";
+import mooc8 from "../assets/img/mooc8-min.png";
+import mooc9 from "../assets/img/mooc9-min.png";
+import mooc10 from "../assets/img/mooc10-min.png";
 export const MyContext = createContext();
 export const MyProvider = ({ children }) => {
   const projects = [
@@ -172,12 +182,7 @@ export const MyProvider = ({ children }) => {
       id: "5",
       title: "YES Africa Mobile App",
       subtitle: "Youth Empowerment Summit 2025",
-      technologies: [
-        "Expo React Native",
-        "Laravel",
-        "REST API",
-        "JavaScript",
-      ],
+      technologies: ["Expo React Native", "Laravel", "REST API", "JavaScript"],
       images: [yesmobile1, yesmobile2, yesmobile3],
       description:
         "Developed a cross-platform mobile application for the Youth Empowerment Summit 2025 to manage attendees, speakers, event programs, and partners.",
@@ -246,42 +251,92 @@ export const MyProvider = ({ children }) => {
       role: "Frontend Developer",
     },
     {
-  id: "7",
-  title: "Her Day For Her",
-  subtitle: "Women Empowerment Platform",
-  technologies: [
-    "React.js",
-    "Laravel",
-    "Tailwind CSS",
-    "MySQL",
-    "JavaScript"
-  ],
-  images: [herday1, herday2, herday3], 
-  description:
-    "Developed platform to support women empowerment initiatives in Morocco through storytelling, events, and impactful partnerships.",
-  detailedDescription:
-    "Her Day For Her is a digital platform dedicated to highlighting the stories of Moroccan women and promoting empowerment through events, media, and education. The platform features event promotion, partner showcases, dynamic content management, and a fully responsive design. The frontend was built in React.js, with a Laravel backend to handle content, users, and dynamic pages.",
-  features: [
-    "Responsive and modern UI",
-    "Event highlights and details page",
-    "Partner and sponsor showcase",
-    "Dynamic homepage with hero section and scrolling effects",
-    "Optimized SEO and accessibility",
-    "CMS-powered backend for managing content"
-  ],
-  challenges: [
-    "Building a visually impactful layout while maintaining performance",
-    "Ensuring consistent design responsiveness across devices"
-  ],
-  timeline: "1.5 months",
-  year: "2025",
-  status: "Completed",
-  category: "Full Stack Development",
-  liveUrl: "https://herdayforher.ma/",
-  githubUrl: null,
-  role: "Full Stack Developer"
-}
-
+      id: "7",
+      title: "Her Day For Her",
+      subtitle: "Women Empowerment Platform",
+      technologies: [
+        "React.js",
+        "Laravel",
+        "Tailwind CSS",
+        "MySQL",
+        "JavaScript",
+      ],
+      images: [herday1, herday2, herday3],
+      description:
+        "Developed platform to support women empowerment initiatives in Morocco through storytelling, events, and impactful partnerships.",
+      detailedDescription:
+        "Her Day For Her is a digital platform dedicated to highlighting the stories of Moroccan women and promoting empowerment through events, media, and education. The platform features event promotion, partner showcases, dynamic content management, and a fully responsive design. The frontend was built in React.js, with a Laravel backend to handle content, users, and dynamic pages.",
+      features: [
+        "Responsive and modern UI",
+        "Event highlights and details page",
+        "Partner and sponsor showcase",
+        "Dynamic homepage with hero section and scrolling effects",
+        "Optimized SEO and accessibility",
+        "CMS-powered backend for managing content",
+      ],
+      challenges: [
+        "Building a visually impactful layout while maintaining performance",
+        "Ensuring consistent design responsiveness across devices",
+      ],
+      timeline: "1.5 months",
+      year: "2025",
+      status: "Completed",
+      category: "Full Stack Development",
+      liveUrl: "https://herdayforher.ma/",
+      githubUrl: null,
+      role: "Full Stack Developer",
+    },
+    {
+      id: "8",
+      title: "YES Africa E-learning Platform",
+      subtitle: "Online Learning Management System",
+      technologies: [
+        "Laravel",
+        "React.js",
+        "Inertia.js",
+        "MySQL",
+        "Tailwind CSS",
+      ],
+      images: [
+        "mooc1",
+        "mooc2",
+        "mooc3",
+        "mooc4",
+        "mooc5",
+        "mooc6",
+        "mooc7",
+        "mooc8",
+        "mooc9",
+        "mooc10",
+      ],
+      description:
+        "Built a custom E-learning platform for YES Africa to provide structured educational content, track learner progress, and manage course enrollments.",
+      detailedDescription:
+        "This Laravel-powered learning management system was developed to support the Youth Empowerment Summit’s educational initiatives. It includes a complete backend for managing users, courses, lessons, assessments, and certificates. The platform also supports progress tracking. Designed to be simple yet effective, it ensures accessibility for youth learners across Africa.",
+      features: [
+        "User registration and authentication",
+        "Course creation and content organization (modules/lessons)",
+        "Progress tracking and user dashboards",
+        "Certificate generation upon completion",
+        "Quizzes and evaluation system",
+        "Admin dashboard for managing users and content",
+        "Multilingual support",
+        "Responsive UI optimized for mobile and desktop",
+      ],
+      challenges: [
+        "Handling dynamic course content and user progress efficiently",
+        "Ensuring a smooth UX for low-bandwidth regions",
+        "Implementing secure access to course materials and quizzes",
+        "Real-time notification system for updates and results",
+      ],
+      timeline: "2 months",
+      year: "2025",
+      status: "Completed",
+      category: "Full Stack Development",
+      liveUrl: "https://learning.youthempowermentsummit.africa",
+      githubUrl: null,
+      role: "Full stack Developer",
+    },
   ];
 
   return (
