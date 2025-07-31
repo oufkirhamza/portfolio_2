@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../../../assets/img/P1088847.jpg";
+import me from "../../../assets/img/meimage.jpg";
 import { FaArrowRight } from "react-icons/fa6";
 import Star from "../../../components/Star";
 
