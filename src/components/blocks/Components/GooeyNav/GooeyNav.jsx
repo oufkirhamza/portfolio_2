@@ -100,7 +100,6 @@ const GooeyNav = ({
       textRef.current.classList.remove("active");
       void textRef.current.offsetWidth;
       textRef.current.classList.add("active");
-      console.log('eee')
       handleKeyDown(e, index);
     }
     if (filterRef.current) {

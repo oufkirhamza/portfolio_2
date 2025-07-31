@@ -16,17 +16,9 @@ export const FirstSection = () => {
       ScrollTrigger: {
         trigger: "bigcircle",
         markers: true,
-        // onEnter: () => console.log("tezz"),
         start: "top top+=10%",
-        // endTrigger: ".cont",
         end: "bottom bottom",
-        // width:"100%",
-        // scrub: 1,
-        // pin: true,
-        // pinSpacing: false,
-        // toggleClass:'w-[10vw]'
       },
-      // width:"100%",npm
     });
   }, []);
   return (

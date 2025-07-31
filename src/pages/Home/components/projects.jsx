@@ -16,22 +16,26 @@ const Projects = () => {
     gsap.utils.toArray(".prjcts").forEach((prjct, i) => {
       ScrollTrigger.create({
         trigger: prjct,
-        onEnter: () => console.log("enter"),
+        // onEnter: () => console.log("enter"),
         start: "top 10%",
         endTrigger: ".cont",
         end: "bottom bottom",
         scrub: 1,
         pin: true,
         pinSpacing: false,
-        // toggleClass:'w-[10vw]'
       });
     });
   });
   return (
-    <div id="projects" className="cont text-white py-12 sm:py-16 lg:py-20 bg-[#060a21] min-h-[100vh] flex flex-col gap-6 sm:gap-8 lg:gap-12 items-center px-4 sm:px-6 lg:px-8">
+    <div
+      id="projects"
+      className="cont text-white py-12 sm:py-16 lg:py-20 bg-[#060a21] min-h-[100vh] flex flex-col gap-6 sm:gap-8 lg:gap-12 items-center px-4 sm:px-6 lg:px-8"
+    >
       <div className="flex items-center gap-3 mb-4 sm:mb-6">
         <Star width={40} className="sm:w-[50px]" />
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium">Projects</h1>
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium">
+          Projects
+        </h1>
       </div>
 
       <div className="w-full max-w-7xl space-y-6 sm:space-y-8 lg:space-y-12">
@@ -59,14 +63,22 @@ const Projects = () => {
             {/* Content Section */}
             <div className="flex flex-col gap-4 sm:gap-6 lg:w-[50%] z-10 relative">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-                <span className="text-sm sm:text-base text-blue-400 font-medium">{project.year}</span>
+                <span className="text-sm sm:text-base text-blue-400 font-medium">
+                  {project.year}
+                </span>
                 <span className="hidden sm:block text-gray-500">•</span>
-                <span className="text-sm sm:text-base text-gray-400">{project.category}</span>
+                <span className="text-sm sm:text-base text-gray-400">
+                  {project.category}
+                </span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">{project.title}</h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
+                {project.title}
+              </h2>
 
-              <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed">{project.description}</p>
+              <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed">
+                {project.description}
+              </p>
 
               {/* Technologies */}
               <div className="flex flex-wrap gap-2">
