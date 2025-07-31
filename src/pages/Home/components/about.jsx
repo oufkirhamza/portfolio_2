@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../../../assets/img/P1088847.JPG";
+import me from "../../../assets/img/P1088847.jpg";
 import { FaArrowRight } from "react-icons/fa6";
 import Star from "../../../components/Star";
 
@@ -43,7 +43,7 @@ const About = () => {
         <img
           loading="lazy"
           src={me}
-          className="lg:w-[40%] rounded-xl h-[50vh] object-cover object-top "
+          className="lg:w-[40%] rounded-xl -rotate-90 h-[50vh] object-cover object-top "
           alt=""
         />
       </div>
